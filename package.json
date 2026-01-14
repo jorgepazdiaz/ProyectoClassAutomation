@@ -1,0 +1,22 @@
+{
+  "name": "proyectoselenium",
+  "version": "1.0.0",
+  "description": "exit",
+  "main": "index.js",
+  "dependencies": {
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "devDependencies": {
+    "multiple-cucumber-html-reporter": "^3.9.3",
+    "open": "8.4.0"
+  },
+  "scripts": {
+    "report": "node index.js",
+    "test:report": "mvn clean test && node index.js",
+    "pageTitle": "Mi Reporte Cucumber",
+    "reportName": "Reporte de Feature",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NOVUS TECHNOLOGY",
+  "license": "ISC"
+}
