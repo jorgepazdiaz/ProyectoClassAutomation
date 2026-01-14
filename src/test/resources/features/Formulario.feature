@@ -58,7 +58,7 @@ Feature: Registrar Formulario de Novus
     And doy click en cerrar
     Examples:
       | nombre      | apellido   | pasatiempo | genero    | telefono   | correo                | departamento | ciudad | comandos            |
-      | Jorge       | Paz        | Musica     | Masculino | 935404484  | jorgepazdiaz@test.com | LIMA         | LIMA   | Switch Commands     |
+      | Karol       | Villavicencio        | Musica     | Masculino | 935404484  | jorgepazdiaz@test.com | LIMA         | LIMA   | Switch Commands     |
       | Juan Carlos | Llerena    | Lectura    | Masculino | 9447878888 | juacarlos@test.com    | LIMA         | CAÑETE | Navigation Commands |
       | Joan        | Serrato    | Deporte    | Masculino | 955533333  | joan@test.com         | PIURA        | PIURA  | Navigation Commands |
       | Carolina    | Meza       | Lectura    | Femenino  | 913233456  | carolina@test.com     | LIMA         | LIMA   | Browser Commands    |
