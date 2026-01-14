@@ -38,6 +38,10 @@ jobs:
         env:
           headless: true
 
+      # 5️⃣ Ejecutar node index.js para generar el reporte
+      - name: Generate Cucumber HTML Report
+        run: node index.js
+
       # 6️⃣ Publicar reporte HTML como artefacto
       - name: Upload Cucumber HTML Report
         if: always()
@@ -46,9 +50,17 @@ jobs:
           name: cucumber-html-report
           path: target/cucumber-html-report
 
+      # Publicar a Github Pages
+      - name: Deploy report to GitHub Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: target/cucumber-html-report
+
+
       # 6️⃣ Ejecuta solo escenarios por TAGS
       - name: Run smoke tests
         run: mvn clean verify -Dcucumber.filter.tags="@Smoke"
 
-env:
-  headless: true
+
