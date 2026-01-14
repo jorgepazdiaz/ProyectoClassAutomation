@@ -51,9 +51,9 @@ jobs:
           path: target/cucumber-html-report
 
       # Publicar a Github Pages
-      - name: Deploy report to GitHub Pages
+      - name: Deploy report to GitHub Pages Auto
+        uses: peaceiris/actions-gh-pages@v3
         if: always()
-        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: target/cucumber-html-report
