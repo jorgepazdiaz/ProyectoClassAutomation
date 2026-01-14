@@ -4,14 +4,13 @@
   "description": "Proyecto Selenium + Cucumber con reporte HTML",
   "main": "index.js",
   "scripts": {
-    "report": "node index.js",
-    "test:report": "mvn clean test && node index.js"
+    "report": "node index.js"
   },
   "author": "NOVUS TECHNOLOGY",
   "license": "ISC",
   "devDependencies": {
-    "multiple-cucumber-html-reporter": "^3.9.3",
-    "luxon": "^3.7.2",
+    "multiple-cucumber-html-reporter": "3.9.3",
+    "luxon": "3.7.2",
     "open": "8.4.0"
   }
 }
